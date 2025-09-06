@@ -1,0 +1,95 @@
+/* Pose Start Container */
+.pose-start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(100deg, #FF8C00, #FFA500); /* Gradient background */
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pose Start Content */
+.pose-start-content {
+    max-width: 500px; /* Restrict content width for larger screens */
+    width: 100%; /* Ensure it fits on smaller screens */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight background to make text readable */
+    border-radius: 10px;
+}
+
+/* Heading Style */
+.pose-start-heading {
+    font-size: 36px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Description Style */
+.pose-start-description {
+    font-size: 18px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 40px;
+}
+
+/* Button Style */
+.start-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #FFA500;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #FFA500;
+    color: black;
+}
+
+.start-btn:focus {
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .pose-start-heading {
+        font-size: 28px; /* Adjust font size for tablets */
+    }
+
+    .pose-start-description {
+        font-size: 16px; /* Adjust description text */
+    }
+
+    .start-btn {
+        font-size: 16px; /* Adjust button size */
+        padding: 10px 20px;
+    }
+
+    .pose-start-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pose-start-heading {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    .pose-start-description {
+        font-size: 14px; /* Adjust description text for smaller screens */
+    }
+
+    .start-btn {
+        font-size: 14px; /* Adjust button size */
+        padding: 8px 16px;
+    }
+
+    .pose-start-content {
+        padding: 10px;
+    }
+}

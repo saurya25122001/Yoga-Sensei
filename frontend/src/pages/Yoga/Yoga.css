@@ -1,0 +1,92 @@
+/* Yoga Container */
+.yoga-container {
+    background: linear-gradient(100deg, #FF8C00, #FFA500);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Ensure elements within it are positioned relative */
+}
+
+/* Performance Container */
+.performance-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px; /* Space between performance and other elements */
+}
+
+/* Performance Box */
+.pose-performance {
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%; /* Make them responsive */
+}
+
+/* Pose Image */
+.pose-img {
+    position: absolute;
+    right: 20px;
+    top: 150px; /* Adjust to avoid overlapping with the webcam */
+    width: 300px;
+    aspect-ratio: 1;
+    z-index: 1; /* Ensure it stays above canvas */
+}
+
+/* Stop Button */
+.secondary-btn {
+    position: absolute;
+    bottom: 20px; /* Fixed position at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: rgba(125, 125, 125, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Webcam Canvas */
+#webcam, #my-canvas {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 100px; /* Adjust top to avoid overlap */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .yoga-container {
+        padding: 10px;
+    }
+
+    /* Adjust Pose Image */
+    .pose-img {
+        width: 70%;
+        right: 10px;
+        top: 10px;
+    }
+
+    /* Adjust performance container for mobile */
+    .performance-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust Button Positioning */
+    .secondary-btn {
+        bottom: 10px;
+    }
+}

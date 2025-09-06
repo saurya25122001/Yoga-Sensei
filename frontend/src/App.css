@@ -1,0 +1,152 @@
+/* Reset and Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* General Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header and Footer */
+.header,
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+/* Flexbox for layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.column {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .header,
+  .footer {
+    font-size: 1.2rem;
+  }
+
+  .row {
+    flex-direction: column; /* Stack the columns vertically */
+    align-items: center;
+  }
+
+  .column {
+    flex: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%; /* Full width for buttons */
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile (Max width 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header,
+  .footer {
+    font-size: 1rem;
+  }
+
+  .row {
+    flex-direction: column; /* Stack the columns vertically */
+    align-items: center;
+  }
+
+  .column {
+    flex: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%; /* Full width for small screens */
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+}
+
+/* Small Mobile (Max width 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .header,
+  .footer {
+    font-size: 0.9rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    flex: 100%;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .header, .footer {
+    padding: 0.8rem;
+  }
+}

@@ -1,0 +1,97 @@
+/* Container for the About section */
+.about-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(100deg, #FF8C00, #FFA500);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  .about-heading {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Main content */
+  .about-main {
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+  }
+  
+  /* Text content styling */
+  .about-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Developer info styling */
+  .developer-info h4 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    text-decoration: underline;
+  }
+  
+  .developer-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .developer-info a:hover {
+    color: #FFA500;
+  }
+  
+  .developer-info .social-link p {
+    margin: 5px 0;
+    color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-heading {
+      font-size: 36px;
+    }
+  
+    .about-main {
+      width: 90%;
+    }
+  
+    .about-content {
+      font-size: 16px;
+    }
+  
+    .developer-info h4 {
+      font-size: 20px;
+    }
+  
+    .developer-info a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-heading {
+      font-size: 28px;
+    }
+  
+    .about-content {
+      font-size: 14px;
+    }
+  
+    .developer-info h4 {
+      font-size: 18px;
+    }
+  
+    .developer-info a {
+      font-size: 14px;
+    }
+  }
+
+  
