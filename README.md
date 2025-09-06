@@ -91,9 +91,6 @@ Body alignment 🧍
 
 Improvement tips 📈
 
-📸 Screenshots
-Home Page	Pose Detection
-
 	
 📝 Roadmap
 
